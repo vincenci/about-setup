@@ -1,6 +1,7 @@
 :root{
     --branding-color: #6c63ff;
-    --primary-color: #272142 --secondary-color: #f9f7fe;
+    --primary-color: #272142 
+    --secondary-color: #f9f7fe;
     --heading-font-family: "Playfair Display", serif;
     --default-font-family: "Poppins", sans-serif;
 }
@@ -44,8 +45,9 @@ h6 {
     padding: 120px 60px;
 }
 
-.hero-about h1 {
+.hero-about h1,.hero-work h1,.contact-content h1 {
     font-size: 64px;
+    line-height: 1.5;
 }
 
 .hero-about h2 {
@@ -63,7 +65,95 @@ h6 {
     border-radius: 4px;
 }
 
+
+.hero-work h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: var(--default-font-family);
+}
+
+.hero-work p {
+    font-size: 14px;
+}
+
+.work-content {
+    padding: 160px 20px;
+}
+h1 {
+    font-size: 96px;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+p {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.hero {
+    background: var(--secondary-color);
+    text-align: center;
+    padding: 160px 20px;
+}
+
+.hero p {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: var(--primary-color);
+}
+
+.hero h2 {
+    font-family: var(--heading-font-family);
+    font-weight: normal;
+    line-height: 1.5;
+    font-size: 24px;
+}
+
+.project-desciption {
+    padding: 120px 60px;
+}
+
+
+
+.img-fluid {
+    max-width: 80%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.contact-content h3 {
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: var(--default-font-family);
+}
+
 @media (max-width: 900px) {
+    h1 {
+            font-size: 44px;
+            line-height: 2;
+        }
+    
+        h2 {
+            font-size: 44px;
+        }
+    
+        .hero {
+            padding: 80px 20px;
+        }
+    
+        .project-desciption {
+            padding: 0;
+            text-align: center;
+        }
+    
+        .about-section {
+            text-align: center;
+        }
     .hero-about h1 {
         font-size: 33px;
         line-height: 1.2;
@@ -84,5 +174,17 @@ h6 {
             padding: 0;
             margin: 0;
         }
+         .hero-work h1 {
+                font-size: 44px;
+                 line-height: 56px;
+             }
+        
+        
+        .work-content {
+                    padding: 80px 20px;
+                    text-align: center;
+                }
+        
+                
 
 }
